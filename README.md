@@ -23,10 +23,12 @@
 ```
 git clone "https://github.com/random-slop/django_sprint4"
 cd django_sprint4
-python -m venv venv
+python3.10 -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
-python blogicum/manage.py migrate
-python3 blogicum/manage.py runserver
+python3.10 blogicum/manage.py migrate
+python3.10 blogicum/manage.py loaddata db.json
+python3 blogicum/manage.py createsuperuser
+python3.10 blogicum/manage.py runserver
 ```
