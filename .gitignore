@@ -59,6 +59,7 @@ coverage.xml
 *.log
 local_settings.py
 db.sqlite3
+blogicum/db.sqlite3
 db.sqlite3-journal
 
 # Flask stuff:
@@ -150,3 +151,5 @@ media/
 
 sent_emails/
 
+_templates/
+_core/
